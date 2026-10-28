@@ -15,7 +15,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
 
 </head>
@@ -30,7 +30,7 @@
     <div class="container-fluid">
 
         <a class="navbar-brand" href="../index.html">
-            <img class="logo" src="../imagenes/LogoCafBre.png" alt="Logo de Cafetería Vegana de Barrio">
+            <img class="logo" src="../assets/LogoCafBre.png" alt="Logo de Cafetería Vegana de Barrio">
         </a>
 
         <button class="navbar-toggler" type="button"
@@ -51,11 +51,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link link-destacado" href="menu.html">Menú</a>
+                    <a class="nav-link" href="menu.html">Menú</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Nosotros</a>
+                    <a class="nav-link pagina-activa" href="#" aria-current="page">Sobre Nosotros</a>
                 </li>
 
                 <li class="nav-item">
@@ -77,22 +77,33 @@
 
     <main>
 
-        <section class="pagina-contenido">
-            <h1>Nuestra historia</h1>
+    <section class="pagina-contenido historia-nosotros">
+        <div class="row align-items-center">
 
-            <figure>
-                <img src="../imagenes/nosotros.jpeg" alt="Equipo de la Cafetería Vegana">
-                <figcaption>Equipo de la Cafetería Vegana</figcaption>
-            </figure>
+            <div class="col-12 col-lg-6">
+                <h1 class="animate__animated animate__fadeInDown">Nuestra historia</h1>
 
-            <p>Nuestra cafetería vegana nació en 2022 con el propósito de demostrar que la pastelería y el buen café
-                pueden
-                ser 100% libres de crueldad animal sin perder su delicioso sabor. Fundada por dos amigos amantes de la
-                naturaleza, lo que comenzó como un pequeño local de barrio se transformó rápidamente en un punto de
-                encuentro comunitario. Hoy en día, elaboramos cada receta utilizando ingredientes locales, orgánicos y
-                de
-                comercio justo. Desde nuestro café de especialidad con leche de almendras hasta los rollos de canela
-                horneados cada mañana, creamos un espacio sostenible, saludable y acogedor para todos.</p>
+                            <p>
+                    Nuestra cafetería vegana nació en 2022 con el propósito de demostrar
+                    que la pastelería y el buen café pueden ser 100% libres de crueldad
+                    animal sin perder su delicioso sabor. Fundada por dos amigos amantes
+                    de la naturaleza, lo que comenzó como un pequeño local de barrio
+                    se transformó rápidamente en un punto de encuentro comunitario.
+                    Hoy en día, elaboramos cada receta utilizando ingredientes locales,
+                    orgánicos y de comercio justo. Desde nuestro café de especialidad
+                    con leche de almendras hasta los rollos de canela horneados cada
+                    mañana, creamos un espacio sostenible, saludable y acogedor para todos.
+                </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <figure>
+                    <img src="../assets/nosotros.jpeg" alt="Equipo de la Cafetería Vegana">
+                    <figcaption>Equipo de la Cafetería Vegana</figcaption>
+                </figure>
+            </div>
+
+        </div>
         </section>
     </main>
 

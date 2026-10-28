@@ -21,7 +21,7 @@
 
 .box {
     width: 100%;
-    min-height: 150px;
+    min-height: 120px;
     border: 1px solid $color-header;
     padding: 10px;
     font-size: small;
@@ -45,8 +45,13 @@
 }
 
 #box6 {
-    border-left: 4px solid $color-box6;
+    width: 100%;
+    min-height: auto;
+    border: none;
+    padding: 10px;
+    text-align: center;
 }
+
 
 @include responsive($breakpoint-tablet) {
     .flex-contacto {
@@ -69,6 +74,18 @@
     }
 
     .box {
-        width: 30%;
+        width: 48%;
+    }
+}
+
+
+.flex-contacto #box6 {
+    width: 100%;
+}
+
+#box3, #box4 {
+    label {
+        margin-right: 18px;
+        margin-left: 4px;
     }
 }

@@ -1,4 +1,4 @@
-.productosdestacados img, .promos img {
+.promos img {
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -78,7 +78,7 @@ main {
 header {
   min-height: auto;
   background-color: #f0ad8e;
-  padding-bottom: 20px;
+  padding-bottom: 0;
 }
 header p {
   text-align: center;
@@ -124,15 +124,18 @@ nav {
 }
 
 .logo {
-  max-width: 30px;
+  width: 48px;
+  height: auto;
 }
 
 .navbar {
   background-color: #f0ad8e;
+  padding: 14px 24px;
 }
 
 .navbar-nav {
   gap: 20px;
+  margin-left: auto;
 }
 
 .nav-link {
@@ -143,6 +146,13 @@ nav {
   color: #8C4930;
 }
 .nav-link:focus, .nav-link:active {
+  color: #02590f;
+}
+
+.nav-link.pagina-activa,
+.nav-link.pagina-activa:focus,
+.nav-link.pagina-activa:active {
+  font-weight: 700;
   color: #02590f;
 }
 
@@ -175,37 +185,87 @@ header nav ul li a:focus {
 
 .introduccion {
   display: flex;
-  margin: 20;
   padding: 20px;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
   text-align: center;
+}
+
+.descripcion-inicio {
+  font-size: 18px;
+  line-height: 1.6;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 380px;
 }
 
 .titulo-seccion {
   padding: 20px;
 }
 
+.productosdestacados {
+  padding: 30px 20px;
+}
+.productosdestacados article {
+  padding: 15px;
+}
+.productosdestacados figure {
+  margin-bottom: 15px;
+}
 .productosdestacados img {
+  width: 100%;
+  max-width: 280px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
   transition: transform 0.3s;
 }
 .productosdestacados img:hover {
   transform: scale(1.05);
 }
+.productosdestacados h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.productosdestacados p {
+  font-weight: 600;
+}
 
+.promos {
+  padding: 20px;
+}
+.promos article {
+  padding: 15px;
+}
 .promos img {
+  width: 100%;
+  max-width: 280px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
   transition: transform 0.3s;
 }
 .promos img:hover {
   transform: scale(1.05);
+}
+.promos figure {
+  margin-bottom: 15px;
+}
+.promos h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.promos p {
+  font-weight: 600;
 }
 
 .comentarios {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 40px;
+  padding: 20px 40px 40px;
 }
 
 .contenedor-comentarios {
@@ -216,10 +276,23 @@ header nav ul li a:focus {
 }
 .contenedor-comentarios article {
   flex: 1;
+  background-color: #fffaf4;
+  border-radius: 12px;
+  padding: 25px;
+}
+.contenedor-comentarios h4 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.contenedor-comentarios p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .pagina-contenido {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   padding: 40px 20px;
   text-align: center;
@@ -229,13 +302,17 @@ header nav ul li a:focus {
 }
 .pagina-contenido article {
   display: inline-block;
+  width: 260px;
+  max-width: 100%;
   margin: 20px;
   vertical-align: top;
 }
 .pagina-contenido img {
-  width: 220px;
-  height: 220px;
+  width: 100%;
+  max-width: 260px;
+  height: 230px;
   object-fit: cover;
+  border-radius: 12px;
 }
 .pagina-contenido figcaption {
   margin-top: 10px;
@@ -257,6 +334,58 @@ header nav ul li a:focus {
     justify-content: space-evenly;
   }
 }
+@media (max-width: 767px) {
+  .productosdestacados,
+  .seccion-promociones {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .productosdestacados article,
+  .promos article {
+    padding-bottom: 5px;
+  }
+  .comentarios {
+    padding: 20px;
+  }
+}
+.pagina-menu .pagina-contenido {
+  max-width: 1300px;
+  padding: 25px 20px;
+}
+.pagina-menu .pagina-contenido article {
+  width: 260px;
+  margin: 20px 10px;
+}
+
+.historia-nosotros {
+  max-width: 1200px;
+}
+.historia-nosotros h1 {
+  margin-bottom: 25px;
+  text-align: left;
+}
+.historia-nosotros p {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: left;
+}
+.historia-nosotros figure {
+  margin: 0;
+}
+.historia-nosotros img {
+  width: 100%;
+  max-width: 450px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.encabezado-pagina {
+  background-color: #f5e9da;
+  text-align: center;
+  padding: 40px 20px;
+}
+
 .galeria {
   padding: 20px;
 }
@@ -293,7 +422,7 @@ header nav ul li a:focus {
 
 .box {
   width: 100%;
-  min-height: 150px;
+  min-height: 120px;
   border: 1px solid #f0ad8e;
   padding: 10px;
   font-size: small;
@@ -317,7 +446,11 @@ header nav ul li a:focus {
 }
 
 #box6 {
-  border-left: 4px solid #829DA8;
+  width: 100%;
+  min-height: auto;
+  border: none;
+  padding: 10px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -337,8 +470,16 @@ header nav ul li a:focus {
     justify-content: space-evenly;
   }
   .box {
-    width: 30%;
+    width: 48%;
   }
+}
+.flex-contacto #box6 {
+  width: 100%;
+}
+
+#box3 label, #box4 label {
+  margin-right: 18px;
+  margin-left: 4px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -39,7 +39,7 @@
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="#">
-                    <img class="logo" src="imagenes/LogoCafBre.png" alt="Logo de Cafetería Vegana de Barrio">
+                    <img class="logo" src="assets/LogoCafBre.png" alt="Logo de Cafetería Vegana de Barrio">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,10 +50,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
+                            <a class="nav-link pagina-activa" href="#" aria-current="page">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-destacado" href="pages/menu.html">Menú</a>
+                            <a class="nav-link" href="pages/menu.html">Menú</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/sobre-nosotros.html">Sobre Nosotros</a>
@@ -75,30 +75,32 @@
 <main>
     <div class="row">
 
-        <section class="introduccion">
+        <section class="introduccion col-12 col-lg-5">
             <h1 class="animate__animated animate__fadeInDown"> Bienvenido a tu cafetería vegana de barrio </h1>
             <!-- titulo para secciones-->
-            <h3>Para servir y llevar<br>Disponible también a domicilio</h3>
+            <p class="descripcion-inicio">
+                Disfruta de nuestra cafetería vegana de barrio.
+                Para servir, llevar o pedir a domicilio.
+            </p>
+            <a href="pages/menu.html" class="btn btn-success">Conoce nuestro menú</a>
             <!--titulo para secciones pequeñas, cards, etc-->
         </section>
 
-            <section class="galeria col-12">
-
-                <h2 class="titulo-seccion">Nuestra cafetería</h2>
+            <section class="galeria col-12 col-lg-7">
 
                 <div id="carouselCafeteria" class="carousel slide">
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
-                            <img src="imagenes/cafes.jpeg" class="d-block w-100" alt="Variedad de cafés">
+                            <img src="assets/cafes.jpeg" class="d-block w-100" alt="Variedad de cafés">
                         </div>
 
                         <div class="carousel-item">
-                            <img src="imagenes/carrot_cake.jpeg" class="d-block w-100" alt="Carrot cake vegano">
+                            <img src="assets/carrot_cake.jpeg" class="d-block w-100" alt="Carrot cake vegano">
                         </div>
 
                         <div class="carousel-item">
-                            <img src="imagenes/cheescake.jpeg" class="d-block w-100" alt="Cheesecake vegano">
+                            <img src="assets/cheescake.jpeg" class="d-block w-100" alt="Cheesecake vegano">
                         </div>
 
                     </div>
@@ -130,8 +132,7 @@
 
                     <article class="caja-producto1 col-12 col-lg-4 text-center">
                         <figure>
-                            <img src="imagenes/cafe-expresso.webp" alt="Café expresso">
-                            <figcaption>Café expresso</figcaption>
+                            <img src="assets/cafe-expresso.webp" alt="Café expresso">
                         </figure>
                         <h3>Café expresso</h3>
                         <p>$2.500</p>
@@ -140,8 +141,7 @@
 
                     <article class="caja-producto2 col-12 col-lg-4 text-center">
                         <figure>
-                            <img src="imagenes/brownie.jpeg" alt="Brownie chocolate">
-                            <figcaption>Brownie de chocolate</figcaption>
+                            <img src="assets/brownie.jpeg" alt="Brownie chocolate">
                         </figure>
                         <h3>Brownie chocolate</h3>
                         <p>$3.000</p>
@@ -150,8 +150,7 @@
 
                     <article class="caja-producto3 col-12 col-lg-4 text-center">
                         <figure>
-                            <img src="imagenes/sandwich.jpg" alt="Sandwich">
-                            <figcaption>Sandwich de verduras</figcaption>
+                            <img src="assets/sandwich.jpg" alt="Sandwich">
                         </figure>
                         <h3>Sandwich</h3>
                         <p>$4.300</p>
@@ -173,8 +172,7 @@
 
                     <article class="promo1 col-12 col-lg-6 text-center">
                         <figure>
-                            <img src="imagenes/promo-cafe-media-luna.webp" alt="Café con media luna">
-                            <figcaption>Café + media luna</figcaption>
+                            <img src="assets/promo-cafe-media-luna.webp" alt="Café con media luna">
                         </figure>
                         <h3>Café + media luna</h3>
                         <p>$5.000</p>
@@ -183,8 +181,7 @@
 
                     <article class="promo2 col-12 col-lg-6 text-center">
                         <figure>
-                            <img src="imagenes/promo-cafe-brownie.jpg" alt="Café con brownie">
-                            <figcaption>Café + brownie de chocolate</figcaption>
+                            <img src="assets/promo-cafe-brownie.jpg" alt="Café con brownie">
                         </figure>
                         <h3>Café + Brownie chocolate</h3>
                         <p>$5.000</p>
